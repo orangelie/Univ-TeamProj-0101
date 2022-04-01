@@ -1,0 +1,8 @@
+[ Khronos ]
+https://www.khronos.org/registry/OpenGL-Refpages/gl4/
+
+[ GLFW ]
+https://www.glfw.org/docs/3.3/modules.html
+
+[ programcreek ]
+https://www.programcreek.com/java-api-examples/?api=org.lwjgl.glfw.GLFWVidMode
