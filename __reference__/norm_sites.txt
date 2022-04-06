@@ -6,3 +6,21 @@ https://www.glfw.org/docs/3.3/modules.html
 
 [ programcreek ]
 https://www.programcreek.com/java-api-examples/?api=org.lwjgl.glfw.GLFWVidMode
+
+[ lwjgl guide ]
+https://www.lwjgl.org/guide
+
+[ git book ]
+https://lwjglgamedev.gitbooks.io/3d-game-development-with-lwjgl/content/chapter01/chapter1.html
+
+[ cookbook ]
+https://examples.javacodegeeks.com/core-java/lwjgl-tutorial/
+
+[ saturate()?? ]
+https://community.khronos.org/t/saturate/53155
+
+[ how to draw circle? ]
+https://community.khronos.org/t/how-to-draw-circle/59661/7
+
+[unity smooth damp & camera movement ]
+https://github.com/Unity-Technologies/UnityCsReference/blob/master/Runtime/Export/Math/Vector3.cs
