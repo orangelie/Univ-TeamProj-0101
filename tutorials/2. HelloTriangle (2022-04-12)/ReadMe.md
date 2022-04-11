@@ -15,9 +15,6 @@
 **[2]**: Convert to Wireframe Mode.  
 **[Esc]**: Close a Window.  
 
-
-## 🔑 How to use?
-
 ## 📷 Photo
 ![](https://github.com/Mawi1e/Univ-TeamProj-0101/blob/main/tutorials/2.%20HelloTriangle%20(2022-04-12)/pict/pict.png)
 
