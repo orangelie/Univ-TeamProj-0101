@@ -1,3 +1,6 @@
+[ lwjgl sound ]
+https://lwjglgamedev.gitbooks.io/3d-game-development-with-lwjgl/content/chapter22/chapter22.html
+
 [ Khronos ]
 https://www.khronos.org/registry/OpenGL-Refpages/gl4/
 
@@ -22,5 +25,6 @@ https://community.khronos.org/t/saturate/53155
 [ how to draw circle? ]
 https://community.khronos.org/t/how-to-draw-circle/59661/7
 
-[unity smooth damp & camera movement ]
+[ unity smooth damp & camera movement ]
 https://github.com/Unity-Technologies/UnityCsReference/blob/master/Runtime/Export/Math/Vector3.cs
+http://gyanendushekhar.com/2020/03/10/smooth-camera-follow-in-unity-3d/
