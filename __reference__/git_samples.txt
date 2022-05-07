@@ -3,3 +3,6 @@ https://github.com/SilverTiger/lwjgl3-tutorial
 
 [ GLSL ShaderLesson ]
 https://github.com/mattdesl/lwjgl-basics/wiki/ShaderLesson1
+
+[ LWJGL tutorials ]
+https://github.com/lwjglgamedev/lwjglbook

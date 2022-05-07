@@ -1,0 +1,2 @@
+https://learnopengl.com/Getting-started/Textures
+https://stackoverflow.com/questions/10801016/lwjgl-textures-and-strings
