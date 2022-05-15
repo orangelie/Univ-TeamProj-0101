@@ -79,6 +79,8 @@ public class ShaderAttribute {
 		GL43.glBufferData(GL43.GL_ELEMENT_ARRAY_BUFFER, indices, GL43.GL_STATIC_DRAW);
 		
 		// 정점버퍼 자료형식 지정
+		
+		// 이 부분 설명 TextureCoord.java에 해놓았습니다. 해당자바파일가서 한번 주석봐주세요.
 		GL43.glVertexAttribPointer(0, 3, GL43.GL_FLOAT, false, 3 * floatSize, 0);
 		GL43.glEnableVertexAttribArray(0);
 	}

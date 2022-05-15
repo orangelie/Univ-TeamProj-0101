@@ -95,7 +95,32 @@ public class TextureCoord {
 				GL43.GL_FLOAT, false, 5 * floatSize, 0);
 		GL43.glEnableVertexAttribArray(0);
 		
-		GL43.glVertexAttribPointer(1, 3,
+		// 20221768박상우 ->
+		// Attribute 만드는곳...
+		// 보통 glVertexAttribPointer함수는 이런식으로 정해지는것같습니다.
+		// glVertexAttribPointer(a, b, c, d, e, f);
+		
+		// a: Attribute순서 (셰이더에서 location)
+		// b: Attribute의 크기(위에 3이고 아래는 2인데, 3인이유는 (x, y, z) 부동소수점자료형 3개인 3차원벡터가쓰임,
+		// 밑에는 (u, v) 2차원벡터가 쓰임)
+		// c: Attribute의 자료형(float임)
+		// d: 일반화할것인지..(예를들어서 정점이 (3, 5, 2)건 (1,8,3)건 다 크기가 1인 단위벡터로 만드는것같아요[true라면])
+		// e: 전체 Attribute의 크기 (x,y,z) + (u, v) = 5 따라서,  5 * floatSize
+		// f: 실제 offset의 위치
+		// 오프셋이란 메모리상의 정확한위치입니다.
+		
+		// (x,y,z)정점자료형 - (위치: 0)
+		// - x (위치: 4)
+		// - y (위치: 8)
+		// - z (위치: 12)
+		// (u,v)텍셀자료형 (위치: 12)
+		// - u (위치: 16)
+		// - v (위치: 20)
+		
+		// 여기서 f는 3 * floatSize였습니다. -> 따라서 3 * 4 = 12 -> 따라서 12
+		
+		
+		GL43.glVertexAttribPointer(1, 2,
 				GL43.GL_FLOAT, false, 5 * floatSize, 3 * floatSize);
 		GL43.glEnableVertexAttribArray(1);
 	}
