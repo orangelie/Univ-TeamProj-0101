@@ -1,0 +1,14 @@
+[libGDX 다운로드]
+https://libgdx.com
+https://github.com/libgdx/libgdx
+
+[ 자료(국내) ]
+https://blog.naver.com/PostView.nhn?blogId=sksd321&logNo=220805737152&parentCategoryNo=&categoryNo=71&viewDate=&isShowPopularPosts=false&from=postView
+
+[ 자료(해외) ]
+https://stackoverflow.com/questions/21488311/how-to-create-a-button-in-libgdx
+https://libgdx.badlogicgames.com/ci/nightlies/docs/api/com/badlogic/gdx/scenes/scene2d/utils/ClickListener.html
+https://gamefromscratch.com/libgdx-tutorial-13-physics-with-box2d-part-1-a-basic-physics-simulations/
+https://gamefromscratch.com/libgdx-tutorial-part-16-cameras/
+https://stackoverflow.com/questions/34824933/can-an-actor-handle-click-and-key-down-events
+https://www.tabnine.com/code/java/methods/com.badlogic.gdx.scenes.scene2d.InputEvent/getKeyCode

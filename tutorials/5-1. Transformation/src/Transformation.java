@@ -73,16 +73,25 @@ public class Transformation {
 		final float aspectRatio = (float)((float)width / (float)height);
 		
 		projMat = new Matrix4f();
+		
+		// 0.25f * PI: 수직시야각
+		// aspectRatio: 종횡비
+		// 1.0f: 시야프러스텀의 최소 z길이
+		// 1000.0f: 시야프러스텀의 최대 z길이
 		projMat = projMat.identity().perspective(
 				0.25f * PI, aspectRatio, 1.0f, 1000.0f);
 		
+		
 		/* 					시야행렬 구축								  */
+		// 카메라의 위치
 		Vector3f eye = new Vector3f();
 		eye.set(0.0f, 0.0f, -2.0f);
 		
+		// 카메라가 바라보고있는 방향의 벡터
 		Vector3f center = new Vector3f();
 		center.set(0.0f, 0.0f, 1.0f);
 		
+		// 카메라기준 상향벡터(up vector)
 		Vector3f up = new Vector3f();
 		up.set(0.0f, 1.0f, 0.0f);
 		
@@ -91,6 +100,9 @@ public class Transformation {
 		
 		/* 					월드행렬 구축								  */
 		
+		// 이거는 간단한 예제여서 world행렬이 하나지만, 만약
+		// 여러개의 물체를 만들경우 이러한 월드행렬은 물체마다 만들어줘야함
+		// 요약하자면, 각 물체들의 좌표
 		worldMat = new Matrix4f();
 		worldMat = worldMat.identity().translate(0.0f, 0.0f, 0.0f);
 	}
@@ -308,7 +320,7 @@ public class Transformation {
 		GL43.glUniform4f(location, red, green, blue, 1.0f);
 		
 		/************************************************************/
-		// world행렬을 이용한 카메라회전
+		// world행렬을 이용한 물체회전
 		worldMat = worldMat.rotationY(Math.sin(3.0f * (float)dt));
 		
 		// Uniform 메모리값얻기
